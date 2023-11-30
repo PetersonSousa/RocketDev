@@ -27,4 +27,11 @@ $ git pull
 
 
 
-Test de branch para ver como deploya em prd
+Realizar MERGE de DEV para MAIN
+
+
+git push origin main // envia o desenvolvimento que foi feito em DEV para MAIN 
+
+git checkout <Branch name> // vc verificar se esta na branch correta 
+
+git merge <BRANCH DE DESTINO (MAIN)> // ENVIANDO PARA MAIN
