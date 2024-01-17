@@ -28,6 +28,9 @@ form.onsubmit = event => {
     
 }
 
+inputWeight.oninput = () => AlertError.close()
+inputHeight.oninput = () => AlertError.close()
+
 function notANumber(value){
     return isNaN(value) || value == ""
 }
@@ -36,3 +39,4 @@ function IMC (weight, height){
 
     return (weight / ((height / 100 )** 2)).toFixed(2)
 }
+
