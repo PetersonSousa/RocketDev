@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    
+    /* variáveis */
+    --bg-color: #121214;
+    --basic-color: #42d3ff;
+    --text-color:#ffffff;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto',sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+main{
+    margin: 0;
+    padding: 0;  
+    align-self: end;
+    justify-self: center    
+}
+
+button{
+    background-color: transparent;
+    color: var(--basic-color);
+    border: none;
+    cursor: pointer;
+
+}
+.hide{
+    display: none;
+}
+
+#timer{
+    font-size: clamp(4rem, 4rem + 10vh , 8.8rem);
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 1.6rem;
+}
+
+#controls{
+    background-color: #048cb6;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    justify-content: center;
+    border-radius: 9999px;
+    width: clamp(10rem, 10rem + 30vh,22.8rem); /*Ajuste de mobile funcao clamp*/
+    height: clamp(8rem, 5rem + 10vh, 10.8rem);
+}
+
+button img{
+    width: clamp(4.2rem, 2rem + 12vh, 6.4rem);
+}
+
+
+div{
+    justify-self: end;
+    align-self: end;
+    padding: 0rem 4rem 3.2rem 0rem;
+}
+
+div button{
+    background-color: #048cb6;
+    border-radius: 99999px;
+}
